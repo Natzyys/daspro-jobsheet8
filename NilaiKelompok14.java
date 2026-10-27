@@ -1,5 +1,4 @@
 import java.util.Scanner;
-
 public class NilaiKelompok14 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
@@ -35,11 +34,11 @@ public class NilaiKelompok14 {
                     kelompokTerbaik = nomorKelompok;
                     rataTertinggi = rataNilai;
                 }
-
-                nomorKelompok++;
+            nomorKelompok++;
             }
+            System.out.println();
             System.out.println("============================");
-            System.out.println("Kelompok Terbaik :" + kelompokTerbaik);
+            System.out.println("Kelompok Terbaik : Kelompok " + kelompokTerbaik);
             System.out.println("rata rata tertinggi :" + rataTertinggi);
         }
     }

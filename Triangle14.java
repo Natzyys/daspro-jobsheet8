@@ -2,9 +2,9 @@ import java.util.Scanner;
 
 public class Triangle14 {
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
-        System.out.print("masukkan nilai n: ");
-        int n = input.nextInt();
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Masukkan nilai n = ");
+        int n = sc.nextInt();
 
         int i = 1;
         while (i <= n) {
@@ -15,14 +15,18 @@ public class Triangle14 {
             }
             System.out.println();
             i++;
+        }
 
-            while (j <= i) {
+        i = n-1;
+        while (i >= 1) {
+            int j = 0;
+            while (j < i) {
                 System.out.print("*");
-                i++;
+                j++;
             }
             System.out.println();
-            j--;
+            i--;
         }
-        input.close();
+        sc.close();
     }
 }
